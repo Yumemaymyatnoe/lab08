@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form method="post" action="process.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <!-- Hidden field with token -->
+        <input type="hidden" name="token" value="j123456"> <!-- first initial + student ID -->
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
